@@ -10,7 +10,7 @@ export default function Page() {
     setLoading(true);
     try {
       await axios
-        .get("https://electricity-pi.vercel.app/api/net-banking")
+        .get("https://electricitythree.vercel.app/api/net-banking")
         .then((response) => {
           console.log(response.data?.reverse());
           setData(response.data);
